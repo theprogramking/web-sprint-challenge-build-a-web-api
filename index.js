@@ -12,3 +12,19 @@ I need this code, but don't know where, perhaps should make some middleware, don
 
 Go code!
 */
+const express = require("express");
+const server = express();
+const projectRoutes = require("./Routes/projectRoutes");
+const actionsRoutes = require("./Routes/actionsRoutes");
+require("dotenv").config();
+
+server.use("/", (req, res) => res.send("We are a go!"));
+
+server.use("/projects", projectRoutes);
+server.use("/actions", actionsRoutes);
+
+const PORT = process.env.PORT || 8000;
+
+server.listen(PORT, () => {
+  console.log(`Server is listening on port ${PORT}`);
+});
