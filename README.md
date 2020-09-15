@@ -61,10 +61,19 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. The core features of Node.js and Express and why they are useful.
+   Some core features of Node.js is being able to execute JavaScript on the server, single-threaded, asynchronous, and compatible with NPM. Some core concepts of Express are being able to build RESTFUL web services, serve static content, and power real time application using technologies like Web Sockets.
+
 1. Understand and explain the use of Middleware?
-1. The basic principles of the REST architectural style.
+   Middleware is array of functions that get executed in a certain order
+
+1. The basic principles of the REST style.
+   The basic principles of the REST architectural style is
+
 1. Understand and explain the use of Express Routers.
+   The use of express Routers is to mainly organize your code/routes into files that can be easily accessed.
+
 1. Describe tooling used to manually test the correctness of an API.
+   You can use Postman which is a very powerful tool to check the coo
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
