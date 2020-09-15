@@ -14,12 +14,11 @@ Go code!
 */
 const express = require("express");
 const server = express();
-const projectRoutes = require("./Routes/projectRoutes");
-const actionsRoutes = require("./Routes/actionsRoutes");
+const projectRoutes = require("./projects/projectRoutes");
+const actionsRoutes = require("./actions/actionsRoutes");
 require("dotenv").config();
 
 server.use("/", (req, res) => res.send("We are a go!"));
-
 server.use("/projects", projectRoutes);
 server.use("/actions", actionsRoutes);
 
